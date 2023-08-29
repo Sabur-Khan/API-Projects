@@ -26,8 +26,8 @@ let displayPhones = phones =>{
 
             <figure><img src="${phone.image}" alt="Shoes" /></figure>
             <div class="card-body justify-center">
-                <h2 class="card-title justify-center">${phone.phone_name}</h2>
-                <p>There are many variations of passages of available, but the majority have suffered</p>
+                <h2 class="card-title text-black font-bold justify-center">${phone.phone_name}</h2>
+                <p class="text-black">There are many variations of passages of available, but the majority have suffered</p>
                 <div class="card-actions justify-center">
                     <button onclick="handelShowDetail('${phone.slug}')" class="btn btn-primary">Show Details</button>
                 </div>
