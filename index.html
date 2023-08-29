@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Loading Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white">
+    <!-- Header part -->
+    <header class="container mx-auto pt-6 mb-16">
+        <div class="flex justify-between items-center">
+            <div>
+                <a href="#"><h2 class="font-extrabold text-black">Hot Gadgets</h2></a>
+            </div>
+            <div>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero part -->
+    <main>
+        <div class="text-center mb-7">
+            <h1 class="text-black font-extrabold text-5xl mb-10">Apple Iphone 13 Pro Max</h1>
+            <p class="text-black w-[513px] mx-auto mb-9">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+            <button class="btn btn-primary font-bold">Buy Now</button>
+        </div>
+        <div class="grid grid-cols-3 w-[40%] mx-auto">
+            <img class="h-auto" src="image/pngwing 3.png" alt="" srcset="">
+            <img class="h-auto" src="image/pngwing 1.png" alt="" srcset="">
+            <img class="h-auto" src="image/pngwing 2.png" alt="" srcset="">
+        </div>
+        <div class="text-center mb-4">
+            <h1 class="text-3xl text-black font-bold">Search your phone</h1>
+        </div>
+
+
+        <div class="">
+            <div class="w-[80%] flex justify-center mx-auto mb-9">
+                <input id="serch-field" class="w-1/2 h-12 pl-3 pr-3 border bg-transparent text-black" type="text" placeholder="Search your phone">
+                <button onclick="serchBtn()" class="bg-black w-32" type="button">Search</button>
+            </div>
+        </div>
+
+        <section class="container ">
+            <div id="phone-container" class="grid grid-cols-3 gap-4 w-[80%] mx-auto">
+            </div>
+            
+
+            <div id="loding-spnner" class="text-center my-60 hidden">
+                <span class="loading text-primary loading-dots loading-lg"></span>
+            </div>
+            <!-- show all -->
+            <div id="show-All" class="hidden text-center">
+                <button class="btn mt-5 mb-5 btn-primary ">Show All</button>
+            </div>
+        </section>
+
+        <!-- modal details-->
+        <!-- Open the modal using ID.showModal() method -->
+        
+
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+
+            <form method="dialog" class="modal-box">
+                <div id="show-detail-container">
+                  
+
+                </div>
+                <div class="modal-action">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn btn-primary">Close</button>
+                </div>
+            </form>
+        </dialog>
+    </main>
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
